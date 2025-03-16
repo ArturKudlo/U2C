@@ -1,13 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { cn } from '@bem-react/classname';
+import { CalculationOfPayments } from './components/CslculstionOfPsyments';
+
+import './App.scss';
+
+const cnApp = cn('App');
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <button>Расчет платежей</button>
-      </header>
+    <div className={cnApp()}>
+      <CalculationOfPayments />
     </div>
   );
 }
